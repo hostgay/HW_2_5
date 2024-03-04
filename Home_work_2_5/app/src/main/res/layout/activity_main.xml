@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <EditText    android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_margin="20dp"
+        android:autofillHints="username"
+        android:background="@drawable/et_design"
+        android:hint="@string/tv_username"
+        android:inputType="text"
+        android:paddingStart="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="#558B2F"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@id/et_email"
+        tools:ignore="RtlSymmetry"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_margin="20dp"
+        android:autofillHints="emailAddress"
+        android:background="@drawable/et_design"
+        android:hint="@string/tv_email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="#558B2F"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@id/et_password"
+        tools:ignore="RtlSymmetry"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_margin="20dp"
+        android:autofillHints="password"
+        android:background="@drawable/et_design"
+        android:hint="@string/tv_password"
+        android:inputType="textPassword"
+        android:paddingStart="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="#558B2F"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@id/btn_next"
+        tools:ignore="RtlSymmetry"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:backgroundTint="@color/white"
+        android:text="    NEXT"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:drawableEnd="@drawable/ic_arrow_r"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/text4"/>
+
+
+
+
+    <Button
+        android:id="@+id/buttonPanel2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/white"
+        android:drawableEnd="@drawable/baseline_arrow_back_24"
+        android:paddingEnd="12dp"
+        android:text="@string/back"
+        android:textColor="#827717"
+        app:layout_constraintEnd_toStartOf="@id/text3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlSymmetry" />
+
+
+    <TextView
+        android:id="@+id/tv_trivia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:text="@string/trivia"
+        android:textColor="#616161"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textColor="#616161"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_question"
+        android:textColor="#616161"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65" />
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_question"
+        android:textColor="#616161"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.61"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.67" />
+
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_question"
+        android:textColor="#616161"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.67" />
+
+    <ImageView
+        android:id="@+id/img_hd"
+        android:layout_width="70dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/img"
+        android:contentDescription="@string/Image"
+        app:layout_constraintBottom_toTopOf="@id/tv_trivia"
+        app:layout_constraintEnd_toEndOf="@id/tv_trivia"
+        app:layout_constraintStart_toStartOf="@id/tv_trivia" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
